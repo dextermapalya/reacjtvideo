@@ -1,0 +1,12 @@
+https://www.peterbe.com/plog/how-to-create-react-app-with-docker
+https://github.com/webpack/webpack-dev-server/issues/547
+https://mherman.org/blog/dockerizing-a-react-app/
+https://blog.bam.tech/developper-news/dockerize-your-app-and-keep-hot-reloading
+https://github.com/flexdinesh/react-redux-boilerplate
+1)  docker image build -t react:app .
+2) docker image ls react:app
+3) docker container run -it -p 3000:3000 -p 35729:35729 -v $(pwd):/app react:app
+or
+docker container run --detach --rm --name=reactapp -p 3000:3000 -p 35729:35729 -v $(pwd):/app react:app
+
+
